@@ -1,4 +1,4 @@
-package answers.ch3.ex11;
+package ch3.ex11;
 
 import answers.ch3.ex11.Account;
 

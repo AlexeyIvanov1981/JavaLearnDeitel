@@ -1,4 +1,4 @@
-package answers.ch3.ex12;
+package ch3.ex12;
 
 public class Invoice {
     private String partNumber;
