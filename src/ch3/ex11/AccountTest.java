@@ -1,6 +1,6 @@
-package answers.сh3.ex11;
+package answers.ch3.ex11;
 
-import answ.сh3.ex11.Account;
+import answers.ch3.ex11.Account;
 
 import java.util.Scanner;
 

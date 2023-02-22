@@ -1,6 +1,6 @@
-package answers.сh3.ex12;
+package answers.ch3.ex12;
 
-import answ.сh3.ex12.Invoice;
+import answers.ch3.ex12.Invoice;
 
 public class InvoiceTest {
     public static void main(String[] args) {

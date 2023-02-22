@@ -1,6 +1,6 @@
-package answers.сh3.ex13;
+package answers.ch3.ex13;
 
-import answ.сh3.ex13.Employee;
+import answers.ch3.ex13.Employee;
 
 public class EmployeeTest {
     public static void main(String[] args) {

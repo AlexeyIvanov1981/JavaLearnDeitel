@@ -1,4 +1,4 @@
-package answers.сh3.ex14;
+package answers.ch3.ex14;
 
 public class Date {
     private int month;

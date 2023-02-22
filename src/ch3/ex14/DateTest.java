@@ -1,6 +1,6 @@
-package answers.сh3.ex14;
+package answers.ch3.ex14;
 
-import answ.сh3.ex14.Date;
+import answers.ch3.ex14.Date;
 
 public class DateTest {
     public static void main(String[] args) {

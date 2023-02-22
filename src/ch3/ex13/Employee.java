@@ -1,4 +1,4 @@
-package answers.сh3.ex13;
+package answers.ch3.ex13;
 
 public class Employee {
     private String name;
