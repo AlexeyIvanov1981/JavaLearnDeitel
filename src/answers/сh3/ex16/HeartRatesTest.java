@@ -1,4 +1,4 @@
-package src.answ.сh3.ex16;
+package answers.сh3.ex16;
 
 import answ.сh3.ex16.HeartRates;
 

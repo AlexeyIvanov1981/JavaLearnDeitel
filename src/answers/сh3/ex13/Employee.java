@@ -1,4 +1,4 @@
-package src.answ.сh3.ex13;
+package answers.сh3.ex13;
 
 public class Employee {
     private String name;

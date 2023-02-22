@@ -1,4 +1,4 @@
-package src.answ.сh3.ex11;
+package answers.сh3.ex11;
 
 import answ.сh3.ex11.Account;
 

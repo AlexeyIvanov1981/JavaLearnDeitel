@@ -1,4 +1,4 @@
-package src.answ.сh3.ex14;
+package answers.сh3.ex14;
 
 import answ.сh3.ex14.Date;
 
