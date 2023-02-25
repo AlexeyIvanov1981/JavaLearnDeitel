@@ -1,4 +1,4 @@
-package ch3.ex17;
+package answers.ch3.ex17;
 
 import java.util.Scanner;
 
