@@ -1,8 +1,5 @@
-<<<<<<<< HEAD:src/answers/ch3/ex14/DateTest.java
 package answers.ch3.ex14;
-========
-package ch3.ex14;
->>>>>>>> origin/main:src/ch3/ex14/DateTest.java
+
 
 import answers.ch3.ex14.Date;
 

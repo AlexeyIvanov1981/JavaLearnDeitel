@@ -1,8 +1,5 @@
-<<<<<<<< HEAD:src/answers/ch3/ex14/Date.java
 package answers.ch3.ex14;
-========
-package ch3.ex14;
->>>>>>>> origin/main:src/ch3/ex14/Date.java
+
 
 public class Date {
     private int month;

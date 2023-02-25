@@ -1,8 +1,5 @@
-<<<<<<<< HEAD:src/answers/ch3/ex16/HeartRatesTest.java
 package answers.ch3.ex16;
-========
-package ch3.ex16;
->>>>>>>> origin/main:src/ch3/ex16/HeartRatesTest.java
+
 
 import answers.ch3.ex16.HeartRates;
 

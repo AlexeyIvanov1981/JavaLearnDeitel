@@ -1,8 +1,5 @@
-<<<<<<<< HEAD:src/answers/ch3/ex11/AccountTest.java
 package answers.ch3.ex11;
-========
-package ch3.ex11;
->>>>>>>> origin/main:src/ch3/ex11/AccountTest.java
+
 
 import answers.ch3.ex11.Account;
 
