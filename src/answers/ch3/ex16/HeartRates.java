@@ -1,4 +1,4 @@
-package answers.сh3.ex16;
+package answers.ch3.ex16;
 
 public class HeartRates {
     private String name;

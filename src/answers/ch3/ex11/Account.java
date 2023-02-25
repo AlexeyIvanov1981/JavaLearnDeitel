@@ -1,4 +1,4 @@
-package answers.сh3.ex11;
+package answers.ch3.ex11;
 
 public class Account {
 
