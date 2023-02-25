@@ -1,4 +1,4 @@
-package answers.ch4.average;
+package ch4.average;
 
 import java.util.Scanner;
 

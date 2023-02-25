@@ -1,7 +1,5 @@
-package answers.ch3.ex16;
+package ch3.ex16;
 
-
-import answers.ch3.ex16.HeartRates;
 
 import java.util.Scanner;
 

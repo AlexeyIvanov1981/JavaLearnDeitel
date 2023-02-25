@@ -1,7 +1,5 @@
-package answers.ch3.ex14;
+package ch3.ex14;
 
-
-import answers.ch3.ex14.Date;
 
 public class DateTest {
     public static void main(String[] args) {

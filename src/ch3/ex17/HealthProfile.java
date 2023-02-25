@@ -1,4 +1,4 @@
-package answers.ch3.ex17;
+package ch3.ex17;
 
 public class HealthProfile {
 

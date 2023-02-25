@@ -1,4 +1,4 @@
-package answers.ch4.student;
+package ch4.student;
 
 public class Student {
     private String name;

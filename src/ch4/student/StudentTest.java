@@ -1,6 +1,4 @@
-package answers.ch4.student;
-
-import answers.ch4.student.Student;
+package ch4.student;
 
 public class StudentTest {
 

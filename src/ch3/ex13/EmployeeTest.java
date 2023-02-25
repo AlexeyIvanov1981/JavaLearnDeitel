@@ -1,7 +1,5 @@
-package answers.ch3.ex13;
+package ch3.ex13;
 
-
-import answers.ch3.ex13.Employee;
 
 public class EmployeeTest {
     public static void main(String[] args) {

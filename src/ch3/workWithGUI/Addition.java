@@ -1,4 +1,4 @@
-package answers.ch3.workWithGUI;
+package ch3.workWithGUI;
 
 
 import javax.swing.*;
