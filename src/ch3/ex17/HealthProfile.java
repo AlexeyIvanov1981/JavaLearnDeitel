@@ -1,22 +1,31 @@
-<<<<<<<< HEAD:src/answers/ch3/ex16/HeartRates.java
-package answers.ch3.ex16;
-========
-package ch3.ex16;
->>>>>>>> origin/main:src/ch3/ex16/HeartRates.java
+package ch3.ex17;
 
-public class HeartRates {
+public class HealthProfile {
+
+    private final int MAX_HEART_RATE = 220;
+    private final int CURRENT_YEAR = 2023;
+
+
     private String name;
     private String surname;
+    private String sex;
     private int dayOfBirth;
     private int monthOfBirth;
     private int yearOfBirth;
+    private double height;
+    private int weight;
 
-    public HeartRates(String name, String surname, int dayOfBirth, int monthOfBirth, int yearOfBirth) {
+
+    public HealthProfile(String name, String surname, String sex, int dayOfBirth, int monthOfBirth,
+                         int yearOfBirth, double height, int weight) {
         this.name = name;
         this.surname = surname;
+        this.sex = sex;
         this.dayOfBirth = dayOfBirth;
         this.monthOfBirth = monthOfBirth;
         this.yearOfBirth = yearOfBirth;
+        this.height = height;
+        this.weight = weight;
     }
 
     public String getName() {
@@ -33,6 +42,14 @@ public class HeartRates {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     public int getDayOfBirth() {
@@ -59,27 +76,41 @@ public class HeartRates {
         this.yearOfBirth = yearOfBirth;
     }
 
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
     public int numberOfYears() {
-        int numberOfYears;
-        numberOfYears = 2023 - this.yearOfBirth;
-        return numberOfYears;
+        return CURRENT_YEAR - getYearOfBirth();
     }
 
     public int maximumHumanHeartRate() {
-        int maximumHumanHeartRate;
-        maximumHumanHeartRate = 220 - (numberOfYears());
-        return maximumHumanHeartRate;
+        return MAX_HEART_RATE - (numberOfYears());
     }
 
     public int targetHumanHeartRate(){
-        int targetHumanHeartRate;
-        targetHumanHeartRate = maximumHumanHeartRate() * 50 / 100;
-        return targetHumanHeartRate;
+        return maximumHumanHeartRate() * 50 / 100;
+    }
+
+    public double bodyMassIndex(){
+        return getWeight() / (getHeight() * getHeight());
     }
 
     @Override
     public String toString() {
-        return "HeartRates{" +
+        return "HealthProfile{" +
                 "name: '" + name + '\'' +
                 ", surname: '" + surname + '\'' +
                 ", date Of Birth: " + dayOfBirth +
@@ -88,6 +119,9 @@ public class HeartRates {
                 ", number Of Years: " + numberOfYears()+
                 ", maximum Human HeartRate: " + maximumHumanHeartRate() +
                 ", target Human HeartRate: " + targetHumanHeartRate() +
+                ", height: " + height +
+                ", weight: " + weight +
+                ", BMI: " + bodyMassIndex() +
                 '}';
     }
 }
