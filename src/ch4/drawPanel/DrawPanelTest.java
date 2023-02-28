@@ -12,7 +12,7 @@ public class DrawPanelTest {
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         app.add(drawPanel);
-        app.setSize(250, 250);
+        app.setSize(200, 200);
         app.setVisible(true);
     }
 }
