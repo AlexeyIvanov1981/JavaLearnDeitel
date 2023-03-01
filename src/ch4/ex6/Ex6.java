@@ -7,7 +7,7 @@ public class Ex6 {
 
         while (x <= 10) {
             sum += x;
-            System.out.printf("x = %d%n", x);
+            System.out.printf("then x is %d sum = %d%n", x, sum);
             ++x;
         }
         System.out.printf("%nSum is: %d%n", sum);
