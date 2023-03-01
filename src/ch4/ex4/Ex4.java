@@ -12,6 +12,11 @@ public class Ex4 {
         int total = 10;
         int x = 1;
         total -= --x;
+        int q = 1;
+        int divisor = 10;
+        q %= divisor;
+        q = q % divisor;
+
 
     }
 }
