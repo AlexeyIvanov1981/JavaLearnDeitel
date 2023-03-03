@@ -6,7 +6,7 @@ public class Ex30 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println(" Input 5 numbers: ");
+        System.out.print("Input 5 numbers: ");
 
         int userNumber = scanner.nextInt();
 
@@ -16,10 +16,15 @@ public class Ex30 {
         int d = userNumber / 10 % 10;
         int f = userNumber % 10;
 
-        if (a == f && b == d) {
+        if((userNumber / 100000) > 0 || (userNumber / 10000) == 0) {
+            System.out.println("You input incorrect number!");
+        }
+        else if (a == f && b == d) {
             System.out.print("That number is Palindromes");
-        } else {
+        }
+        else {
             System.out.print("That number isn't Palindromes");
         }
     }
+
 }
