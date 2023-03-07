@@ -9,21 +9,21 @@ public class Ex23 {
         int largestNumber1 = -2147483648;
         int largestNumber2 = -2147483648;
         int counter = 1;
-        int tmpNumber = -2147483648;
+        int userInput = -2147483648;
 
         System.out.print("Enter number: ");
-        tmpNumber = scanner.nextInt();
-        largestNumber1 = tmpNumber;
+        userInput = scanner.nextInt();
+        largestNumber1 = userInput;
 
         while (counter <= 9) {
             System.out.print("Enter number: ");
-            tmpNumber = scanner.nextInt();
-            if (tmpNumber > largestNumber1) {
+            userInput = scanner.nextInt();
+            if (userInput > largestNumber1) {
                 largestNumber2 = largestNumber1;
-                largestNumber1 = tmpNumber;
+                largestNumber1 = userInput;
             }
-            if (tmpNumber < largestNumber1 && tmpNumber > largestNumber2){
-                largestNumber2 = tmpNumber;
+            if (userInput < largestNumber1 && userInput > largestNumber2){
+                largestNumber2 = userInput;
             }
 
             counter++;
