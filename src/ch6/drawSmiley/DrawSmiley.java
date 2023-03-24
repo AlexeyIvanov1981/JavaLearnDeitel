@@ -10,26 +10,31 @@ public class DrawSmiley extends JPanel {
 
     public void paintComponent(Graphics g) {
 
-
         super.paintComponent(g);
+
         int counter = 1;
 
         while (counter <= 10) {
             int a = ran.nextInt(255) + 1;
             int b = ran.nextInt(255) + 1;
             int c = ran.nextInt(255) + 1;
-//            int d = ran.nextInt(255) + 1;
-//            int e = ran.nextInt(255) + 1;
-//            int f = ran.nextInt(255) + 1;
-            int ovalOrRest = ran.nextInt(1);
+            int width = ran.nextInt(250);
+            int height = ran.nextInt(250);
+            int x = ran.nextInt(250) + 1;
+            int y = ran.nextInt(250) + 1;
+            int ovalOrRestOrRoundRect = ran.nextInt(3) + 1;
 
-            if (ovalOrRest == 0) {
+            if (ovalOrRestOrRoundRect == 1) {
                 g.setColor(new Color(a, b, c));
-                g.fillOval(10, 10, 200, 200);
+                g.fillOval(x, y, width, height);
             }
-            if (ovalOrRest == 1) {
+            if (ovalOrRestOrRoundRect == 2) {
                 g.setColor(new Color(a, b, c));
-                g.fillRect(100, 100, 200, 200);
+                g.fillRect(x, y, width, height);
+            }
+            if (ovalOrRestOrRoundRect == 3) {
+                g.setColor(new Color(a, b, c));
+                g.fillRoundRect(x, y, width, height, 10, 10);
             }
             ++counter;
         }

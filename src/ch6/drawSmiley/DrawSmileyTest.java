@@ -9,7 +9,7 @@ public class DrawSmileyTest {
 
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         app.add(panel);
-        app.setSize(430, 450);
+        app.setSize(530, 550);
         app.setVisible(true);
     }
 }
