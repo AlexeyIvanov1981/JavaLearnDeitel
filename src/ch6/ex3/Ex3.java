@@ -18,7 +18,7 @@ public class Ex3 {
                 "square root of x - %f%n" +
                 "trigonometric tangent of x (x in radians) - %f%n",
                 Math.abs(x), Math.ceil(x), Math.cos(x),
-                Math.exp(x), Math.floor(x),Math.log(y),
+                Math.exp(x), Math.floor(1.3),Math.log(y),
                 Math.max(x, y), Math.min(x, y), Math.pow(x, y),
                 Math.sin(x), Math.sqrt(x), Math.tan(x));
     }
