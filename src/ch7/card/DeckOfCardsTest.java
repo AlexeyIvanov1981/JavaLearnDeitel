@@ -5,9 +5,9 @@ public class DeckOfCardsTest {
         DeckOfCards myDeck = new DeckOfCards();
         myDeck.shuffle();
 
-        for (int i = 1; i <=52; i++){
+        for (int i = 1; i <= 52; i++) {
             System.out.printf("%-23s", myDeck.dealCard());
-            if(i % 4 == 0) System.out.println();
+            if (i % 4 == 0) System.out.println();
         }
     }
 }
