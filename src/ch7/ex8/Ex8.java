@@ -37,7 +37,7 @@ public class Ex8 {
 
         double[] w = new double[99];
         for (int i = 0; i < w.length; i++){
-            w[i] = random.nextDouble(10);
+            w[i] = random.nextDouble();
         }
         System.out.println(Arrays.toString(w));
 
