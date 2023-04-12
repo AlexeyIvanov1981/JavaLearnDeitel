@@ -25,6 +25,6 @@ public class Date {
     }
 
     public String toString(){
-        return String.format("%d %d %d", month, day, year);
+        return String.format("%d/%d/%d", month, day, year);
     }
 }
