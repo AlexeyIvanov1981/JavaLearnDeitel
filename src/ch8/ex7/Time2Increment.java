@@ -95,4 +95,16 @@ public class Time2Increment {
                 ((getHour() == 0 || getHour() == 12) ? 12 : getHour() % 12),
                 getMinute(), getSecond(), (getHour() < 12 ? "AM" : "PM"));
     }
+
+    public void tick (){
+        if (getSecond() + 1 >= 60) {
+            setSecond(0);
+            try {
+                setMinute(getMinute() + 1);
+            }catch (Exception e){
+                setMinute(0);
+                setHour(getHour() + 1);
+            }
+        } else setSecond(getSecond() + 1);
+    }
 }
