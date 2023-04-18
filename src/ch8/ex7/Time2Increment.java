@@ -96,12 +96,12 @@ public class Time2Increment {
                 getMinute(), getSecond(), (getHour() < 12 ? "AM" : "PM"));
     }
 
-    public void tick (){
+    public void tick() {
         if (getSecond() + 1 >= 60) {
             setSecond(0);
             try {
                 setMinute(getMinute() + 1);
-            }catch (Exception e){
+            } catch (Exception e) {
                 setMinute(0);
                 setHour(getHour() + 1);
             }
