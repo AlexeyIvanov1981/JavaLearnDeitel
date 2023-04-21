@@ -1,5 +1,9 @@
 package ch8.ex8;
 
+
+import ch8.ex8.exceptions.IllegalDayException;
+import ch8.ex8.exceptions.IllegalMonthException;
+
 public class DateIncrement {
     private int month;
     private int day;
@@ -7,7 +11,7 @@ public class DateIncrement {
 
     private static final int[] daysPerMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-    public DateIncrement(int month, int day, int year) {
+    public DateIncrement(int month, int day, int year) throws IllegalArgumentException {
         if (month <= 0 || month > 12)
             throw new IllegalArgumentException("month (" + month + ") must be 1-12");
 
@@ -24,7 +28,8 @@ public class DateIncrement {
         System.out.printf("Date object constructor for date %s%n", this);
     }
 
-    public void nextDay() {
+    public void nextDay() throws IllegalDayException, IllegalMonthException
+    {
         if (getDay() + 1 <= daysPerMonth[getMonth()]) {
             setDay(getDay() + 1);
         } else if (getDay() + 1 > daysPerMonth[getMonth()]) {
@@ -54,19 +59,19 @@ public class DateIncrement {
         return year;
     }
 
-    public void setMonth(int month) {
+    public void setMonth(int month) throws IllegalMonthException {
         if (month <= 0 || month > 12)
-            throw new IllegalArgumentException("month (" + month + ") must be 1-12");
+            throw new IllegalMonthException(month);
         this.month = month;
     }
 
-    public void setDay(int day) {
+    public void setDay(int day) throws IllegalDayException {
         if (day <= 0 || (day > daysPerMonth[month] && !(month == 2 && day == 29)))
-            throw new IllegalArgumentException("day (" + day + ") out-of-range for the specified month and year");
+            throw new IllegalDayException(day);
         this.day = day;
     }
 
-    public void setYear(int year) {
+    public void setYear(int year) throws IllegalArgumentException {
         if (year < 0 || year > 2500)
             throw new IllegalArgumentException("year (" + year + ") out-of-range for year");
         this.year = year;
