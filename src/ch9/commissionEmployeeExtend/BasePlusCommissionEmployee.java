@@ -1,4 +1,4 @@
-package ch9.commissionEmployeeExpend;
+package ch9.commissionEmployeeExtend;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee {
     private double baseSalary;

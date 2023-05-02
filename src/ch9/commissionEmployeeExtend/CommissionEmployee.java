@@ -1,4 +1,4 @@
-package ch9.commissionEmployeeExpend;
+package ch9.commissionEmployeeExtend;
 
 public class CommissionEmployee extends Object {
     private final String firstName;
