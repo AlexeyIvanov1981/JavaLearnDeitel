@@ -1,11 +1,11 @@
 package ch9.commissionEmployeeExpend;
 
 public class CommissionEmployee extends Object {
-    protected final String firstName;
-    protected final String lastName;
-    protected final String socialSecurityNumber;
-    protected double grossSales;
-    protected double commissionRate;
+    private final String firstName;
+    private final String lastName;
+    private final String socialSecurityNumber;
+    private double grossSales;
+    private double commissionRate;
 
     public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber,
                               double grossSales, double commissionRate) {
@@ -56,14 +56,14 @@ public class CommissionEmployee extends Object {
     }
 
     public double earnings() {
-        return grossSales * commissionRate;
+        return getGrossSales() * getCommissionRate();
     }
 
     public String toString() {
         return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f",
-                "commission employee", firstName, lastName,
-                "social security number", socialSecurityNumber,
-                "gross sales", grossSales,
-                "commission rate", commissionRate);
+                "commission employee", getFirstName(), getLastName(),
+                "social security number", getSocialSecurityNumber(),
+                "gross sales", getGrossSales(),
+                "commission rate", getCommissionRate());
     }
 }
