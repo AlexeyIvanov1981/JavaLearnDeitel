@@ -44,7 +44,7 @@ public class CommissionEmployee extends Employee {
     }
 
     public String toString() {
-        return String.format("%s%n%s: %n%s %.2f%n%s: %.2f",
+        return String.format("%s%n%s: %n%s %.2f%n%s %.2f",
                 "Commission employee:", super.toString(),
                 "Gross sales:", getGrossSales(),
                 "Commission rate:", getCommissionRate());
