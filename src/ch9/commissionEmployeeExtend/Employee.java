@@ -25,8 +25,8 @@ public class Employee extends Object {
 
     @Override
     public String toString() {
-        return "First Name: " + firstName + "\n" +
-                "Last Name: " + lastName + "\n" +
-                "Social Security Number: " + socialSecurityNumber;
+        return "Name: " + firstName + "\n" +
+                "Surname: " + lastName + "\n" +
+                "Social security number: " + socialSecurityNumber;
     }
 }

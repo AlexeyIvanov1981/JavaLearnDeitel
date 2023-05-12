@@ -46,9 +46,7 @@ public class HourlyEmployee extends Employee {
 
     @Override
     public String toString() {
-        return "Name: " + getFirstName() + "\n" +
-                "Surname: " + getLastName() + "\n" +
-                "Social security number: " + getSocialSecurityNumber() + "\n" +
+        return super.toString() + "\n" +
                 "Hours: " + hours + "\n" +
                 "Wage: " + wage + "\n" +
                 "Earnings: " + earnings();
