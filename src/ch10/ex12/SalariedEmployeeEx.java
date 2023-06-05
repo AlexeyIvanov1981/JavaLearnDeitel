@@ -3,8 +3,8 @@ package ch10.ex12;
 public class SalariedEmployeeEx extends EmployeeEx{
     private double weeklySalary;
 
-    public SalariedEmployeeEx(String firstName, String lastName, String socialSecurityNumber, double weeklySalary) {
-        super(firstName, lastName, socialSecurityNumber);
+    public SalariedEmployeeEx(String firstName, String lastName, String socialSecurityNumber, double weeklySalary, DateEx birthDay) {
+        super(firstName, lastName, socialSecurityNumber, birthDay);
 
         if (weeklySalary < 0.0) {
             throw new IllegalArgumentException("Weekly salary must be >= 0.0");

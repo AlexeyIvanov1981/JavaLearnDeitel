@@ -4,8 +4,8 @@ public class CommissionEmployeeEx extends EmployeeEx {
     private double grossSales;
     private double commissionRate;
 
-    public CommissionEmployeeEx(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
-        super(firstName, lastName, socialSecurityNumber);
+    public CommissionEmployeeEx(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate, DateEx birthDay) {
+        super(firstName, lastName, socialSecurityNumber, birthDay);
 
         if (grossSales < 0.0) {
             throw new IllegalArgumentException("Gross sales must be >= 0.0");

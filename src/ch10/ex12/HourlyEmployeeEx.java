@@ -4,8 +4,8 @@ public class HourlyEmployeeEx extends EmployeeEx {
     private double wage;
     private double hours;
 
-    public HourlyEmployeeEx(String firstName, String lastName, String socialSecurityNumber, double wage, double hours) {
-        super(firstName, lastName, socialSecurityNumber);
+    public HourlyEmployeeEx(String firstName, String lastName, String socialSecurityNumber, double wage, double hours, DateEx birthDay) {
+        super(firstName, lastName, socialSecurityNumber, birthDay);
 
         if (wage < 0.0) {
             throw new IllegalArgumentException("Wage must be >= 0.0");
