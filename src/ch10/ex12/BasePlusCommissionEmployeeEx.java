@@ -4,7 +4,7 @@ public class BasePlusCommissionEmployeeEx extends CommissionEmployeeEx {
     private double baseSalary;
 
     public BasePlusCommissionEmployeeEx(String firstName, String lastName, String socialSecurityNumber,
-                                      double grossSales, double commissionRate, double baseSalary) {
+                                        double grossSales, double commissionRate, double baseSalary, DateEx birthDay) {
         super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate, birthDay);
 
         if (baseSalary < 0.0) {
