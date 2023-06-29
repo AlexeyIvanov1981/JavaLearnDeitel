@@ -5,7 +5,7 @@ public class DateEx {
     private int day;
     private int year;
 
-    private static final int[] daysPerMonth = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    private static final int[] daysPerMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     public DateEx(int month, int day, int year) {
         if (month <= 0 || month > 12)
@@ -24,7 +24,19 @@ public class DateEx {
         System.out.printf("Date object constructor for date %s%n", this);
     }
 
-    public String toString(){
+    public int getMonth() {
+        return month;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String toString() {
         return String.format("%d/%d/%d", month, day, year);
     }
 }
