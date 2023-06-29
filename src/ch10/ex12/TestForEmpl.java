@@ -2,6 +2,7 @@ package ch10.ex12;
 
 public class TestForEmpl {
     public static void main(String[] args) {
+        DateEx currentDate = new DateEx(2, 2, 2000);
         EmployeeEx emp[] = new EmployeeEx[4];
         emp[0] = new CommissionEmployeeEx("Bob", "Boby", "123-123", 6000.0, 0.9, new DateEx(1, 1, 2000));
         emp[1] = new HourlyEmployeeEx("Mary", "May", "258-258", 55.26, 40.0, new DateEx(2, 2, 1990));
@@ -10,7 +11,11 @@ public class TestForEmpl {
 
 
         for (EmployeeEx employeeEx : emp){
-            System.out.printf("%s%n", employeeEx.earnings());
+            if (currentDate.getMonth() == employeeEx.getBirthDate().getMonth()) {
+                System.out.printf("%s + premium 100$%n", employeeEx.earnings() + 100.0);
+            } else {
+                System.out.printf("%s%n", employeeEx.earnings());
+            }
         }
     }
 }
