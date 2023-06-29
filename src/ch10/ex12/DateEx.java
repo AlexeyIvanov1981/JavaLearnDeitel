@@ -21,7 +21,7 @@ public class DateEx {
         this.day = day;
         this.year = year;
 
-        System.out.printf("Date object constructor for date %s%n", this);
+        //System.out.printf("Date object constructor for date %s%n", this);
     }
 
     public int getMonth() {
