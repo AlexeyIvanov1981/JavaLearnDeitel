@@ -8,12 +8,10 @@ public class TestShape {
         shapes[1] = new Square(5.6);
         shapes[2] = new Triangle(2.5, 3.6);
 
-        for (TwoDimensionalShape shape : shapes){
-            if (shape.getIsTwoDimensionalShape()) {
-                System.out.print("Two Dimensional Shape - ");
-                System.out.printf("Area is %.0f%n", shape.getArea());
+        for (TwoDimensionalShape shape : shapes) {
+            System.out.printf("%s - %.2f%n", shape, shape.getArea());
 
-            }
         }
+
     }
 }

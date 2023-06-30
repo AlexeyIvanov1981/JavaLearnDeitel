@@ -25,4 +25,9 @@ public class Square extends TwoDimensionalShape {
     public double getArea() {
         return Math.pow(size, 2);
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " 'Square' ";
+    }
 }

@@ -1,16 +1,12 @@
 package ch10.ex13;
 
-public abstract class TwoDimensionalShape extends Shape implements Area{
-    private boolean isTwoDimensionalShape;
-    public TwoDimensionalShape() {
-        isTwoDimensionalShape = true;
+public abstract class TwoDimensionalShape extends Shape implements Area {
+
+
+    public abstract double getArea();
+    @Override
+    public String toString() {
+        return "Two Dimensional Shape";
     }
-
-    public boolean getIsTwoDimensionalShape() {
-        return isTwoDimensionalShape;
-    }
-
-
-    public abstract  double getArea();
 
 }

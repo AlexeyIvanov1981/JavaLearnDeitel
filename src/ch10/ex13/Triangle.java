@@ -37,4 +37,9 @@ public class Triangle extends TwoDimensionalShape {
     public double getArea() {
         return sizeA * sizeB / 2;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " 'Triangle' ";
+    }
 }
