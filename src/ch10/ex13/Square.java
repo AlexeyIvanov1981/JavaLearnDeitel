@@ -1,6 +1,6 @@
 package ch10.ex13;
 
-public class Square extends TwoDimensionalShape{
+public class Square extends TwoDimensionalShape {
 
     private double size;
 
