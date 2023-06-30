@@ -28,6 +28,6 @@ public class Square extends TwoDimensionalShape {
 
     @Override
     public String toString() {
-        return super.toString() + " 'Square' ";
+        return super.toString() + " 'Square' " + " Area: " + getArea();
     }
 }

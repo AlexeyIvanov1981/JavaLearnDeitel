@@ -26,6 +26,6 @@ public class Circle extends TwoDimensionalShape {
 
     @Override
     public String toString() {
-        return super.toString() + " 'Circle' ";
+        return super.toString() + " 'Circle' " + " Area: " + getArea();
     }
 }

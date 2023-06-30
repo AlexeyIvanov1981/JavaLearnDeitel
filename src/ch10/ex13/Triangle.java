@@ -40,6 +40,6 @@ public class Triangle extends TwoDimensionalShape {
 
     @Override
     public String toString() {
-        return super.toString() + " 'Triangle' ";
+        return super.toString() + " 'Triangle' " + " Area: " + getArea();
     }
 }
