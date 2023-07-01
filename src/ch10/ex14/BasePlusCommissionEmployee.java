@@ -1,12 +1,11 @@
-package ch10.ex12;
+package ch10.ex14;
 
-public class BasePlusCommissionEmployeeEx extends CommissionEmployeeEx {
+public class BasePlusCommissionEmployee extends CommissionEmployee {
     private double baseSalary;
 
-    public BasePlusCommissionEmployeeEx(String firstName, String lastName,
-                                        String socialSecurityNumber, double grossSales,
-                                        double commissionRate, double baseSalary, DateEx birthDay) {
-        super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate, birthDay);
+    public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber,
+                                      double grossSales, double commissionRate, double baseSalary) {
+        super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate);
 
         if (baseSalary < 0.0) {
             throw new IllegalArgumentException("Base salary must be >= 0.0");
