@@ -33,9 +33,9 @@ public class PieceWorker extends Employee {
 
     @Override
     public String toString() {
-        return String.format("%s: %s%n%s: $%,.2f; %s: %.2f",
-                "commission employee", super.toString(),
-                "Wage", getWage(),
-                "Pieces", getPieces());
+        return String.format("%s%s%n%s%.1f %n%s%.1f",
+                "Piece worker employee:", super.toString(),
+                "Wage: ", getWage(),
+                "Pieces: ", getPieces());
     }
 }

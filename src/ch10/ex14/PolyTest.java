@@ -10,6 +10,8 @@ public class PolyTest {
                 "333-33-3333", 10000.00, 0.06);
         BasePlusCommissionEmployee basePlusCommissionEmployee = new BasePlusCommissionEmployee("Bob",
                 "Lewis", "444-44-4444", 5000, 0.04, 300);
+        PieceWorker pieceWorker = new PieceWorker("Holy", "San", "555-55-555",
+                141.68, 10);
 
         System.out.println("Employees processed individually:");
 
@@ -21,12 +23,15 @@ public class PolyTest {
 
         System.out.printf("%n%s%n%s: $%,.2f%n%n", basePlusCommissionEmployee, "earned", basePlusCommissionEmployee.earnings());
 
-        Employee[] employees = new Employee[4];
+        System.out.printf("%n%s%n%s: $%,.2f%n%n", pieceWorker, "earned", pieceWorker.earnings());
+
+        Employee[] employees = new Employee[5];
 
         employees[0] = salariedEmployee;
         employees[1] = hourlyEmployee;
         employees[2] = commissionEmployee;
         employees[3] = basePlusCommissionEmployee;
+        employees[4] = pieceWorker;
 
 
         System.out.printf("Employees processed polymorphically:%n%n");
