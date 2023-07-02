@@ -8,6 +8,12 @@ public class Test {
 
         carbonFootprints.add(0, new Car(100));
         carbonFootprints.add(1, new Bicycle(100));
-        carbonFootprints.add(2, new Building("1", 100));
+        carbonFootprints.add(2, new Building("1", 10));
+
+
+        for (CarbonFootprint carbonFootprint : carbonFootprints) {
+            System.out.println(carbonFootprint);
+
+        }
     }
 }

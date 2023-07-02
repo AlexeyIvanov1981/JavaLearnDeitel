@@ -23,6 +23,6 @@ public class Car implements CarbonFootprint {
 
     @Override
     public String toString() {
-        return String.format("Number of cars %d allocates ", getCarCount());
+        return String.format("Number of cars %d allocates carbon: %.2f", getCarCount(), getCarbonFootprint());
     }
 }

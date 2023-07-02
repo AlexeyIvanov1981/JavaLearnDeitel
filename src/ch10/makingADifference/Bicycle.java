@@ -24,6 +24,6 @@ public class Bicycle implements CarbonFootprint{
 
     @Override
     public String toString() {
-        return String.format("Number of bike %d allocates ", getBikeCount());
+        return String.format("Number of bike %d allocates carbon: %.2f", getBikeCount(), getCarbonFootprint());
     }
 }
