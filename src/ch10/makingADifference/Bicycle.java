@@ -1,6 +1,6 @@
 package ch10.makingADifference;
 
-public class Bicycle implements CarbonFootprint{
+public class Bicycle implements CarbonFootprint {
     private int bikeCount;
 
     private final int carbonDioxideFromBikeInYear = 1000 * 365;

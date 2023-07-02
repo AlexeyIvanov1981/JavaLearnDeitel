@@ -33,6 +33,7 @@ public class Building implements CarbonFootprint {
 
     @Override
     public String toString() {
-        return String.format("Building with name %s and with %d people carbon: %.2f", getBuildAddress(), getPeopleCount(), getCarbonFootprint());
+        return String.format("Building with name %s and with %d people carbon: %.2f",
+                getBuildAddress(), getPeopleCount(), getCarbonFootprint());
     }
 }
