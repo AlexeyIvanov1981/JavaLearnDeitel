@@ -1,4 +1,4 @@
-package ch11;
+package ch11.learenEx11;
 
 import java.util.Scanner;
 
