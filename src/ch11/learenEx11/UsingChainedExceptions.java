@@ -26,6 +26,6 @@ public class UsingChainedExceptions {
     }
 
     public static void method3() throws Exception {
-        throw new RuntimeException("throw new Exception in method3");
+        throw new RuntimeException("Exception thrown in method3");
     }
 }
