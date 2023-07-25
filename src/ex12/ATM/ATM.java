@@ -1,13 +1,15 @@
 package ex12.ATM;
 
 public class ATM {
+
     private boolean userAuthenticated;
     private int currentAccountNumber;
     private Screen screen;
     private Keypad keypad;
     private CashDispenser cashDispenser;
-    private DipositSlot dipositSlot;
+    private DepositSlot depositSlot;
     private BankDatabase bankDatabase;
+
     private static final int BALANCE_INQUIRY = 1;
     private static final int WITHDRAWAL = 2;
     private static final int DEPOSIT = 3;
@@ -19,7 +21,7 @@ public class ATM {
         screen = new Screen();
         keypad = new Keypad();
         cashDispenser = new CashDispenser();
-        dipositSlot = new DepositSlot();
+        depositSlot = new DepositSlot();
         bankDatabase = new BankDatabase();
     }
 
@@ -57,6 +59,7 @@ public class ATM {
             int mainMenuSelection = displayMainMenu();
 
             switch (mainMenuSelection) {
+
                 case BALANCE_INQUIRY:
                 case WITHDRAWAL:
                 case DEPOSIT:
@@ -80,12 +83,14 @@ public class ATM {
     }
 
     private int displayMainMenu() {
+
         screen.displayMessageLine("\nMain menu:");
         screen.displayMessageLine("1 - View my balance");
         screen.displayMessageLine("2 - Withdraw cash");
         screen.displayMessageLine("3 - Deposit funds");
         screen.displayMessageLine("4 - Exit\n");
         screen.displayMessage("Enter a choice: ");
+
         return keypad.getInput();
     }
 
@@ -102,7 +107,7 @@ public class ATM {
                 break;
 
             case DEPOSIT:
-                temp = new Deposit(currentAccountNumber, screen, bankDatabase, keypad, depositSlot);
+                temp = new Deposit(currentAccountNumber, screen, bankDatabase, keypad, dipositSlot);
                 break;
         }
         return temp;
