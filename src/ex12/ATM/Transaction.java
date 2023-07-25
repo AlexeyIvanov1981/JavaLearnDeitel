@@ -10,4 +10,16 @@ public abstract class Transaction {
 
     public void execute(){
     }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public Screen getScreen() {
+        return screen;
+    }
+
+    public BankDatabase getBankDatabase() {
+        return bankDatabase;
+    }
 }

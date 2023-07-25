@@ -16,4 +16,16 @@ public class Withdrawal extends Transaction {
     public void execute(){
 
     }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public Keypad getKeypad() {
+        return keypad;
+    }
+
+    public CashDispenser getCashDispenser() {
+        return cashDispenser;
+    }
 }
