@@ -27,10 +27,12 @@ public class ATM {
 
     public void run() {
         while (true) {
+
             while (!userAuthenticated) {
                 screen.displayMessageLine("\nWelcome!");
                 authenticateUser();
             }
+
             performTransaction();
             userAuthenticated = false;
             currentAccountNumber = 0;

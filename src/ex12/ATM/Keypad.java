@@ -1,11 +1,16 @@
 package ex12.ATM;
 
-public class Keypad {
-    public Keypad(){
+import java.util.Scanner;
 
+public class Keypad {
+
+    private Scanner input;
+
+    public Keypad() {
+        input = new Scanner(System.in);
     }
 
-    public void getInput(){
-
+    public int getInput() {
+        return input.nextInt();
     }
 }
