@@ -34,7 +34,7 @@ public class ATM {
             performTransaction();
             userAuthenticated = false;
             currentAccountNumber = 0;
-            screen.displayMessageLine("\nGoodbye!");
+            screen.displayMessageLine("\nThank you! Goodbye!");
         }
     }
 
