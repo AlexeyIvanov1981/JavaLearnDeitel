@@ -18,4 +18,25 @@ public class Account {
             return true;
         } else return false;
     }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public double getAvailableBalance() {
+        return availableBalance;
+    }
+
+    public double getTotalBalance() {
+        return totalBalance;
+    }
+
+    public void credit(double amount){
+        totalBalance += amount;
+    }
+
+    public void debit(double amount){
+        availableBalance -= amount;
+        totalBalance -= amount;
+    }
 }
