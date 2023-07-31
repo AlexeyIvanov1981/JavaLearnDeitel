@@ -31,11 +31,11 @@ public class Account {
         return totalBalance;
     }
 
-    public void credit(double amount){
+    public void credit(double amount) {
         totalBalance += amount;
     }
 
-    public void debit(double amount){
+    public void debit(double amount) {
         availableBalance -= amount;
         totalBalance -= amount;
     }
