@@ -37,7 +37,7 @@ public class BankDatabase {
         getAccount(userAccountNumber).credit(amount);
     }
 
-    public void debit(int userAccountNumber, double amount){
+    public void debit(int userAccountNumber, double amount) {
         getAccount(userAccountNumber).debit(amount);
     }
 }
