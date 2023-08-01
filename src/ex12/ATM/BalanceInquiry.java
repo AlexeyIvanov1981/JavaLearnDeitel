@@ -1,6 +1,6 @@
 package ex12.ATM;
 
-public class BalanceInquiry extends Transaction{
+public class BalanceInquiry extends Transaction {
 
     public BalanceInquiry(int userAccountNumber, Screen atmScreen, BankDatabase atmBankDatabase) {
         super(userAccountNumber, atmScreen, atmBankDatabase);
@@ -13,5 +13,12 @@ public class BalanceInquiry extends Transaction{
 
         double availableBalance = bankDatabase.getAvailableBalance(getAccountNumber());
         double totalBalance = bankDatabase.getTotalBalance(getAccountNumber());
+
+        screen.displayMessageLine("\nBalance Information:");
+        screen.displayMessage(" - Available balance: ");
+        screen.displayDollarAmount(availableBalance);
+        screen.displayMessage("\n - Total balance: ");
+        screen.displayDollarAmount(totalBalance);
+        screen.displayMessageLine("");
     }
 }
