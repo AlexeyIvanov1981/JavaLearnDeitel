@@ -11,8 +11,9 @@ public class BankDatabase {
 
     private Account getAccount(int accountNumber) {
         for (Account currentAccount : accounts) {
-            if (currentAccount.getAccountNumber() == accountNumber)
+            if (currentAccount.getAccountNumber() == accountNumber) {
                 return currentAccount;
+            }
         }
         return null;
     }
@@ -29,8 +30,8 @@ public class BankDatabase {
         return getAccount(userAccountNumber).getAvailableBalance();
     }
 
-    public double getTotalBalance(int uaserAccountNumber) {
-        return getAccount(uaserAccountNumber).getTotalBalance();
+    public double getTotalBalance(int userAccountNumber) {
+        return getAccount(userAccountNumber).getTotalBalance();
     }
 
     public void credit(int userAccountNumber, double amount) {
