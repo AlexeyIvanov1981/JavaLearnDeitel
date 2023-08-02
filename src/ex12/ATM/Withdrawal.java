@@ -19,7 +19,7 @@ public class Withdrawal extends Transaction {
     @Override
     public void execute() {
 
-        boolean cashDispenser = false;
+        boolean cashDispensed = false;
         double availableBalance;
 
         BankDatabase bankDatabase = getBankDatabase();
@@ -41,10 +41,9 @@ public class Withdrawal extends Transaction {
 
                         screen.displayMessageLine("\nYour cash has been" +
                                 " dispensed. Please take your cash now.");
-                    } else
-                        screen.displayMessageLine(
-                                "\nInsufficient cash available in the ATM." +
-                                        "\n\nPlease choose a smaller amount.");
+                    } else screen.displayMessageLine(
+                            "\nInsufficient cash available in the ATM." +
+                                    "\n\nPlease choose a smaller amount.");
                 } else {
                     screen.displayMessageLine(
                             "\nInsufficient funds in your account." +
