@@ -1,7 +1,5 @@
 package ex12.ATM;
 
-import java.awt.desktop.ScreenSleepEvent;
-
 public class Deposit extends Transaction {
 
     private double amount;
