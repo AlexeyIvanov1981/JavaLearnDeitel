@@ -33,10 +33,8 @@ public class Deposit extends Transaction {
             boolean envelopeReceived = depositSlot.isEnvelopeReceived();
 
             if (envelopeReceived) {
-                screen.displayMessageLine("\nYour envelope has been " +
-                        "received.\nNOTE: The money just deposited will not " +
-                        "be available until we verify the amount of any " +
-                        "enclosed cash and your checks clear.");
+                screen.displayMessageLine("\nYour envelope has been received.\nNOTE: The money just deposited will not " +
+                        "be available until we verify the amount of any enclosed cash and your checks clear.");
 
                 bankDatabase.credit(getAccountNumber(), amount);
             } else {
