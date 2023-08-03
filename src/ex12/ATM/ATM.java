@@ -109,7 +109,7 @@ public class ATM {
                 break;
 
             case DEPOSIT:
-                temp = new Deposit(currentAccountNumber, screen, bankDatabase, keypad, dipositSlot);
+                temp = new Deposit(currentAccountNumber, screen, bankDatabase, keypad, depositSlot);
                 break;
         }
         return temp;
