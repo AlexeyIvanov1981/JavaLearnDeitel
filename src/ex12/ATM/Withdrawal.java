@@ -54,7 +54,6 @@ public class Withdrawal extends Transaction {
                 return;
             }
         } while (!cashDispensed);
-
     }
 
     private int displayMenuOfAmounts() {
