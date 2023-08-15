@@ -22,7 +22,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     @Override
     public void display() {
         System.out.println("AVG conditions: " + getAvgTemperature()
-                + "F degrees and " + getHumidity() + "% AVG humidity " + "and pressure " + pressure);
+                + "F degrees and " + getAvgHumidity() + "% AVG humidity " + "and pressure " + pressure);
     }
 
     @Override
@@ -44,7 +44,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         return avgTemp / count;
     }
 
-    public float getHumidity() {
+    public float getAvgHumidity() {
         float avgHum = 0;
         for (float hum : allHumidity) {
             avgHum += hum;
