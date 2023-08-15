@@ -12,10 +12,10 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     private ArrayList<Float> allTemperature;
     private ArrayList<Float> allHumidity;
 
-    public StatisticsDisplay(Subject weatherDate) {
+    public StatisticsDisplay(Subject weather) {
         allTemperature = new ArrayList<>();
         allHumidity = new ArrayList<>();
-        this.weatherDate = weatherDate;
+        this.weatherDate = weather;
         weatherDate.registerObservers(this);
     }
 
