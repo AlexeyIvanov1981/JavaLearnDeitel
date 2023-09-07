@@ -9,7 +9,7 @@ public class StringMiscellaneous {
 
         System.out.printf("length of s1 = %s%n", s1.length());
 
-        System.out.printf("The string reversed is: ");
+        System.out.print("The string reversed is: ");
 
         for (int count = s1.length() - 1; count >= 0; count--){
             System.out.printf("%c", s1.charAt(count));
