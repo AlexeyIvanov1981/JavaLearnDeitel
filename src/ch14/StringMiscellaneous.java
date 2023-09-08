@@ -11,25 +11,19 @@ public class StringMiscellaneous {
 
         System.out.print("The string reversed is: ");
 
-        for (int count = s1.length() - 1; count >= 0; count--){
-            System.out.printf("%c", s1.charAt(count));
-        }
+        for (int count = s1.length() - 1; count >= 0; count--) System.out.printf("%c", s1.charAt(count));
 
         s1.getChars(0, 5, charArray, 0);
 
         System.out.printf("%nThe character array is: ");
 
-        for (char character : charArray){
-            System.out.print(character);
-        }
+        for (char character : charArray) System.out.print(character);
 
         System.out.println();
-        char[]secondCharArray = s1.toCharArray();
+        char[] secondCharArray = s1.toCharArray();
 
         System.out.println("Test for array2");
-        for (char character : secondCharArray){
-            System.out.printf("%c", character);
-        }
+        for (char character : secondCharArray) System.out.printf("%c", character);
 
         System.out.println();
     }
