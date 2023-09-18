@@ -14,7 +14,7 @@ public class FileAndDirectoryInfo {
 
         Path path = Paths.get(scanner.nextLine());
 
-        if (Files.exists(path)){
+        if (Files.exists(path)) {
             System.out.printf("%n%s exists%n", path.getFileName());
 
             System.out.printf("%s a directory%n", Files.isDirectory(path) ? "Is" : "Is not");
@@ -27,7 +27,7 @@ public class FileAndDirectoryInfo {
             System.out.printf("Path: %s%n", path);
             System.out.printf("Absolute path: %s%n", path.toAbsolutePath());
 
-            if (Files.isDirectory(path)){
+            if (Files.isDirectory(path)) {
                 System.out.printf("%nDirectory contents:%n");
                 DirectoryStream<Path> directoryStream = Files.newDirectoryStream(path);
 
