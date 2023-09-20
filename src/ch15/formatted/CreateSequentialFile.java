@@ -54,6 +54,4 @@ public class CreateSequentialFile {
             System.exit(1);
         }
     }
-
-
 }
