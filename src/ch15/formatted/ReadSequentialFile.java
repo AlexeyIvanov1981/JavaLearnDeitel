@@ -35,7 +35,7 @@ public class ReadSequentialFile {
                         record.getLastName(), record.getBalance());
             }
         } catch (EOFException eofException) {
-            System.out.printf("%nНет записей%n");
+            System.out.printf("%nНет записей в файле%n");
         } catch (ClassNotFoundException classNotFoundException) {
             System.err.println("Неправильный тип объекта");
         } catch (IOException ioException) {
