@@ -9,8 +9,8 @@ public class Ex17 {
         int[] result = new int[13];
 
         for (int i = 1; i <= 36_000_000; i++) {
-            int firstDice = secureRandom.nextInt(1, 7);
-            int secondDice = secureRandom.nextInt(1, 7);
+            int firstDice = secureRandom.nextInt(7);
+            int secondDice = secureRandom.nextInt(7);
             int sum = firstDice + secondDice;
             result[sum] += 1;
         }
